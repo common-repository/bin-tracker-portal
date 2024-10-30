@@ -1,0 +1,264 @@
+.b1nTPortal-error-msg {
+    color: #ff0000;
+    margin: 0;
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.b1nTPortal-success-msg {
+    color: #008000;
+    margin: 0;
+    font-size: 100%;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#b1nTPortal_template_wrapper {
+    display: flex!important;
+    flex-direction: column;
+    width: auto!important;
+    position: relative;
+    min-height: 80px;
+    background: #fbfbfb;
+    padding: 24px;
+    font-size: 14px;
+    color: #333;
+    font-family: 'Roboto',sans-serif;
+    box-shadow: 0 0 5px 0 rgba(208,210,215,.5);
+    border: 1px solid #eee;
+    border-radius: 4px;
+    line-height: normal;
+    overflow: hidden;
+}
+
+#b1nTPortal_template {
+    width: 100%!important;
+}
+
+@media screen and (min-width: 410px) {
+    #b1nTPortal_template_wrapper {
+        min-width: 366px;
+    }
+}
+
+.b1nTPortal_ajax_shield {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.b1nTPortal_ajax_shield > div {
+    border: 12px solid #dddddd;
+    border-radius: 50%;
+    border-top: 12px solid #3498db;
+    border-right: 12px solid #3498db;
+    background-color: #dddddd;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: b1nTPortal_spin 2s linear infinite;
+    animation: b1nTPortal_spin 2s linear infinite;
+    margin: auto;
+}
+
+@-webkit-keyframes b1nTPortal_spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes b1nTPortal_spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#b1nTPortal_template input[type="textbox"],
+#b1nTPortal_template input[type="text"],
+#b1nTPortal_template input[type="button"],
+#b1nTPortal_template input[type="password"],
+#b1nTPortal_template select, 
+#b1nTPortal_dialog_box input[type="textbox"],
+#b1nTPortal_dialog_box input[type="text"],
+#b1nTPortal_dialog_box input[type="button"],
+#b1nTPortal_dialog_box input[type="password"],
+#b1nTPortal_dialog_box select {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    outline: none !important;
+    outline-offset: 0;
+    background: #fff;
+    border: solid 1px #ddd;
+    font-family: 'Roboto',sans-serif;
+    height: 36px;
+    font-size: 14px;
+    width: 100%;
+    color:#000;
+}
+
+#b1nTPortal_template textarea,
+#b1nTPortal_dialog_box textarea {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 10px;
+    outline: none !important;
+    outline-offset: 0;
+    background: #fff;
+    border: solid 1px #ddd;
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    color:#000;
+}
+
+#b1nTPortal_template input[type='button'],
+#b1nTPortal_dialog_box  input[type='button'] {
+    background: #0073aa;
+    border: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Roboto',sans-serif;
+    text-transform: none;
+}
+
+#b1nTPortal_template input:focus,
+#b1nTPortal_template select:focus,
+#b1nTPortal_template textarea:focus,
+#b1nTPortal_dialog_box input:focus,
+#b1nTPortal_dialog_box select:focus,
+#b1nTPortal_dialog_box textarea:focus {
+    border: solid 1px #0073aa;
+}
+
+#b1nTPortal_template table,
+#b1nTPortal_dialog_box table {
+    border: none!important;
+}
+
+div.b1nTPortal_nav_extended > div {
+    background-color: #115d81!important;
+}
+
+.b1nTPortal_no_user_select {
+    user-select: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none; 
+   -moz-user-select: none;
+   -ms-user-select: none;
+}
+
+.b1nTPortal_odd {
+    background-color: #f3f3f3;
+}
+
+.b1nTPortal_no_appearance_all_browsers {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/** login template **/
+div#b1nTPortal_login_template > div {
+    display: flex;
+    flex-direction: column;
+}
+
+div#b1nTPortal_login_template > div > div {
+    margin: 3px;
+}
+
+div#b1nTPortal_login_template > div > div input {
+    width: 100%;
+}
+
+div#b1nTPortal_login_template > div > div p.b1nTPortal-error-msg {
+    max-width: 160px;
+}
+
+div.b1nTPortal_login_template_mw375 > div {
+        flex-direction: row!important;
+}
+
+div.b1nTPortal_login_template_mw375 > div > div input {
+    max-width: 310px;
+}
+
+/** job site page template **/
+div.b1nTPortal_jobsites_page_template_mw900 #b1nTPortal_jobsite_page_jobsite_list > div:nth-child(1) th:nth-child(7),
+div.b1nTPortal_jobsites_page_template_mw600 #b1nTPortal_jobsite_page_jobsite_list > div:nth-child(1) th:nth-child(5),
+div.b1nTPortal_jobsites_page_template_mw550 #b1nTPortal_jobsite_page_jobsite_list > div:nth-child(1) th:nth-child(4) {
+    display: none;
+}  
+
+div.b1nTPortal_jobsites_page_template_mw900 #b1nTPortal_jobsite_page_jobsite_list > div:nth-child(2) td:nth-child(7),
+div.b1nTPortal_jobsites_page_template_mw600 #b1nTPortal_jobsite_page_jobsite_list > div:nth-child(2) td:nth-child(5),
+div.b1nTPortal_jobsites_page_template_mw550 #b1nTPortal_jobsite_page_jobsite_list > div:nth-child(2) td:nth-child(4) {
+    display: none;
+}
+
+div.b1nTPortal_jobsites_page_template_mw550 > div > div:nth-child(2) input {
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 100%!important;
+}
+
+/** work orders page **/
+div.b1nTPortal_workorder_page_template_mw780 #b1nTPortal_workorder_page_workorder_list > div:nth-child(1) th:nth-child(7),
+div.b1nTPortal_workorder_page_template_mw710 #b1nTPortal_workorder_page_workorder_list > div:nth-child(1) th:nth-child(6),
+div.b1nTPortal_workorder_page_template_mw650 #b1nTPortal_workorder_page_workorder_list > div:nth-child(1) th:nth-child(5) {
+    display: none;
+}
+
+div.b1nTPortal_workorder_page_template_mw780 #b1nTPortal_workorder_page_workorder_list > div:nth-child(2) td:nth-child(7),
+div.b1nTPortal_workorder_page_template_mw710 #b1nTPortal_workorder_page_workorder_list > div:nth-child(2) td:nth-child(6),
+div.b1nTPortal_workorder_page_template_mw650 #b1nTPortal_workorder_page_workorder_list > div:nth-child(2) td:nth-child(5) {
+    display: none;
+}
+
+div.b1nTPortal_workorder_page_template_mw500 > div > div:nth-child(2) input {
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 100%!important;
+}
+
+/** transaction page **/
+div.b1nTPortal_transactions_page_template_mw839 #b1nTPortal_transactions_page_transactions_list > div:nth-child(1) th:nth-child(4),
+div.b1nTPortal_transactions_page_template_mw727 #b1nTPortal_transactions_page_transactions_list > div:nth-child(1) th:nth-child(5) {
+    display: none;
+}
+
+div.b1nTPortal_transactions_page_template_mw839 #b1nTPortal_transactions_page_transactions_list > div:nth-child(2) td:nth-child(4),
+div.b1nTPortal_transactions_page_template_mw727 #b1nTPortal_transactions_page_transactions_list > div:nth-child(2) td:nth-child(5) {
+    display: none;
+}
+
+div.b1nTPortal_transactions_page_template_mw550 > div > div:nth-child(2) input {
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 100%!important;
+}
+ 
+/** date picker widgets **/
+body .ui-widget {
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 444px) {
+    body .b1nTPortal_all_page_datepicker {
+        font-size: 2vw!important;
+    }
+}
+
+
+
+
+
